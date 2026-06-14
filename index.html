@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5CUSTOMS — Редкие автомобили. Надёжные поставки. Проверенный результат.</title>
+  <meta name="description" content="5CUSTOMS — поставка автомобилей под заказ из-за рубежа, редкие и коллекционные автомобили, техническое обслуживание, запчасти. Москва.">
+  <meta property="og:title" content="5CUSTOMS — Поставка автомобилей из-за рубежа">
+  <meta property="og:description" content="Редкие автомобили. Надёжные поставки. Проверенный результат. Поставка премиальных и коллекционных автомобилей из любой точки мира.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+    <img src="images/logo.png" alt="5CUSTOMS">
+</a>
+    <ul class="navbar-nav">
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><a href="portfolio.html">Каталог</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="index.html#services">Услуги</a></li>
+      <li><a href="index.html#contacts">Контакты</a></li>
+    </ul>
+    <div class="navbar-cta">
+      <a href="tel:+74663337373" class="navbar-phone">+7 (666) 333-73-73</a>
+      <button class="profile-btn" onclick="openProfileModal()" type="button">
+        <span class="profile-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" role="img">
+            <circle cx="12" cy="8" r="3.6" stroke="currentColor" stroke-width="2"/>
+            <path d="M4.8 20c.9-4.1 3.8-6.3 7.2-6.3s6.3 2.2 7.2 6.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="profile-text">Профиль</span>
+      </button>
+    </div>
+    <button class="hamburger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <button class="mobile-close" aria-label="Закрыть">✕</button>
+  <a href="index.html">Главная</a>
+  <a href="portfolio.html">Каталог</a>
+  <a href="news.html">Новости</a>
+  <a href="index.html#services">Услуги</a>
+  <a href="index.html#contacts">Контакты</a>
+  <a href="tel:+74663337373">+7 (666) 333-73-73</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  
+  <!-- HERO VIDEO PLACEHOLDER
+       Положи видео сюда: videos/hero.mp4
+       Формат: короткий mp4, 10–20 секунд, без звука. -->
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+    <source src="videos/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-video-overlay"></div>
+<div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="container hero-content">
+    <div class="hero-label">Поставка автомобилей из любой точки мира</div>
+    <h1>Доставляем автомобили, которые сложно найти</h1>
+    <p class="hero-tagline">Премиальные, редкие и коллекционные автомобили из США, Европы, Японии и ОАЭ. Подбор, проверка, логистика и сопровождение сделки до передачи ключей.</p>
+
+    <div class="hero-actions">
+      <button class="btn btn-primary btn-lg" onclick="openModal('modal-contact')">
+        <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M2 3h16a1 1 0 011 1v10a1 1 0 01-1 1H2a1 1 0 01-1-1V4a1 1 0 011-1z"/>
+          <path d="M1 4l9 7 9-7"/>
+        </svg>
+        Оставить заявку
+      </button>
+      <a href="portfolio.html" class="btn btn-secondary btn-lg">
+        Каталог автомобилей
+        <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 10h10M12 7l3 3-3 3"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-value counter" data-target="200" data-suffix="+">0</div>
+        <div class="hero-stat-label">Поставленных<br>автомобилей</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value counter" data-target="40" data-suffix="+">0</div>
+        <div class="hero-stat-label">Стран-<br>источников</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value counter" data-target="7" data-suffix=" лет">0</div>
+        <div class="hero-stat-label">На рынке<br>поставок</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value counter" data-target="98" data-suffix="%">0</div>
+        <div class="hero-stat-label">Довольных<br>клиентов</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Листать</span>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section premium-services" id="services">
+  <div class="container">
+    <div class="services-head">
+      <h2 class="section-title">Стоимость <span>услуг</span></h2>
+    </div>
+
+    <div class="services-slider-wrap">
+      <button class="services-arrow services-prev">←</button>
+
+      <div class="services-slider" id="servicesSlider">
+        <div class="service-slide">
+          <img src="images/services/1delivery.jpg" alt="Поставка автомобиля под заказ">
+          <h3>Поставка автомобиля под заказ</h3>
+          <ul>
+            <li>Поиск автомобиля под ваш бюджет</li>
+            <li>Проверка истории и состояния</li>
+            <li>Согласование стоимости и сроков</li>
+            <li>Логистика и оформление документов</li>
+            <li>Передача автомобиля в Москве</li>
+          </ul>
+          <div class="service-price">от 150 000 ₽</div>
+          <div class="service-actions">
+            <a href="https://t.me/5customs" class="service-order">Заказать</a>
+            <button class="service-more">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="service-slide">
+          <img src="images/services/2rare_car_search.jpg" alt="Поиск редких автомобилей">
+          <h3>Поиск редких автомобилей</h3>
+          <ul>
+            <li>Поиск по аукционам и закрытым базам</li>
+            <li>Работа с коллекционными экземплярами</li>
+            <li>Проверка юридической чистоты</li>
+            <li>Переговоры с продавцом</li>
+            <li>Подбор альтернативных вариантов</li>
+          </ul>
+          <div class="service-price">от 90 000 ₽</div>
+          <div class="service-actions">
+            <a href="https://t.me/5customs" class="service-order">Заказать</a>
+            <button class="service-more">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="service-slide">
+          <img src="images/services/3porsche_showroom.jpg" alt="Премиальные автомобили">
+          <h3>Премиальные автомобили</h3>
+          <ul>
+            <li>Bentley, Porsche, Aston Martin, Mercedes-Benz</li>
+            <li>Проверка комплектации и истории</li>
+            <li>Подбор по рынкам США, Европы, ОАЭ</li>
+            <li>Сопровождение сделки</li>
+            <li>Контроль доставки</li>
+          </ul>
+          <div class="service-price">индивидуально</div>
+          <div class="service-actions">
+            <a href="https://t.me/5customs" class="service-order">Заказать</a>
+            <button class="service-more">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="service-slide">
+          <img src="images/services/4Collectiblescars.jpg" alt="Коллекционные автомобили">
+          <h3>Коллекционные экземпляры</h3>
+          <ul>
+            <li>Поиск раритетных автомобилей</li>
+            <li>Проверка происхождения</li>
+            <li>Оценка состояния кузова и агрегатов</li>
+            <li>Подготовка к доставке</li>
+            <li>Консультация по хранению и обслуживанию</li>
+          </ul>
+          <div class="service-price">по запросу</div>
+          <div class="service-actions">
+            <a href="https://t.me/5customs" class="service-order">Заказать</a>
+            <button class="service-more">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="service-slide">
+          <img src="images/services/5Maintenance.jpg" alt="Техническое обслуживание">
+          <h3>Техническое обслуживание</h3>
+          <ul>
+            <li>Замена фильтров</li>
+            <li>Технические жидкости</li>
+            <li>Замена аккумуляторов</li>
+            <li>Диагностика импортных авто</li>
+            <li>Подбор расходников</li>
+          </ul>
+          <div class="service-price">от 12 000 ₽</div>
+          <div class="service-actions">
+            <a href="https://t.me/5customs" class="service-order">Заказать</a>
+            <button class="service-more">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="service-slide">
+          <img src="images/services/6Spare_parts.jpg" alt="Запчасти">
+          <h3>Запчасти из-за рубежа</h3>
+          <ul>
+            <li>Бамперы, крылья, двери</li>
+            <li>Фильтры, прокладки, датчики</li>
+            <li>Выхлопные системы</li>
+            <li>Диски и кузовные элементы</li>
+            <li>Редкие детали под заказ</li>
+          </ul>
+          <div class="service-price">по запросу</div>
+          <div class="service-actions">
+            <a href="https://t.me/5customs" class="service-order">Заказать</a>
+            <button class="service-more">Подробнее</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="services-arrow services-next">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section" id="why">
+  <div class="container">
+    <div class="why-intro fade-up">
+      <span class="section-label">Наши преимущества</span>
+      <h2 class="section-title" style="color:var(--white)">Почему выбирают 5CUSTOMS</h2>
+      <div class="divider"></div>
+      <p>Мы не просто логистическая компания — мы партнёр, которому доверяют покупку автомобиля мечты.</p>
+    </div>
+
+    <div class="why-grid fade-up fade-up-delay-1">
+      <div class="why-item">
+        <div class="why-num">01</div>
+        <h3>Индивидуальный запрос</h3>
+        <p>Ищем автомобиль под конкретный запрос клиента: марка, модель, год, цвет, комплектация, история пробега.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">02</div>
+        <h3>Поставка откуда угодно</h3>
+        <p>США, Германия, Япония, ОАЭ, Великобритания — наша сеть охватывает более 40 стран мира.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">03</div>
+        <h3>Помощь в подборе</h3>
+        <p>Не знаете, что выбрать? Наши эксперты помогут определиться с моделью, страной покупки и бюджетом.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">04</div>
+        <h3>Сопровождение сделки</h3>
+        <p>Ведём вас от первого контакта до получения ключей. Никаких скрытых платежей и неожиданностей.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">05</div>
+        <h3>Соблюдение сроков</h3>
+        <p>Фиксируем сроки в договоре и выполняем их. Средняя задержка по всем поставкам — менее 3 дней.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">06</div>
+        <h3>Прозрачная работа</h3>
+        <p>Регулярные отчёты о статусе доставки, документы на каждом этапе, открытое ценообразование.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label fade-up">Как мы работаем</span>
+      <h2 class="section-title fade-up fade-up-delay-1">Этапы поставки</h2>
+      <div class="divider divider-center fade-up fade-up-delay-1"></div>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step fade-up">
+        <div class="process-step-num">01</div>
+        <h4>Заявка</h4>
+        <p>Вы оставляете запрос с параметрами желаемого автомобиля</p>
+      </div>
+      <div class="process-step fade-up fade-up-delay-1">
+        <div class="process-step-num">02</div>
+        <h4>Поиск</h4>
+        <p>Мы ищем подходящие варианты в нашей международной сети</p>
+      </div>
+      <div class="process-step fade-up fade-up-delay-2">
+        <div class="process-step-num">03</div>
+        <h4>Проверка</h4>
+        <p>Тщательная проверка автомобиля: история, техсостояние, юридическая чистота</p>
+      </div>
+      <div class="process-step fade-up fade-up-delay-3">
+        <div class="process-step-num">04</div>
+        <h4>Доставка</h4>
+        <p>Логистика и таможенное оформление полностью на нашей стороне</p>
+      </div>
+      <div class="process-step fade-up fade-up-delay-4">
+        <div class="process-step-num">05</div>
+        <h4>Передача</h4>
+        <p>Вы получаете автомобиль с полным пакетом документов</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GEOGRAPHY -->
+<section class="geo-section">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label fade-up">Глобальная сеть</span>
+      <h2 class="section-title fade-up fade-up-delay-1">Поставляем со всего мира</h2>
+    </div>
+
+    <div class="geo-world fade-up fade-up-delay-1">
+      <div class="geo-content">
+        <span class="section-label">40+ стран</span>
+        <h2>Любой регион.<br>Любая модель.</h2>
+        <p style="margin-top:1rem;">Независимо от того, где находится нужный вам автомобиль — в Калифорнии, Токио, Дубае или Штутгарте — мы его найдём и доставим.</p>
+        <a href="portfolio.html" class="btn btn-primary" style="margin-top:2rem;">Смотреть каталог</a>
+      </div>
+      <div class="geo-regions">
+        <div class="region-list">
+          <div class="region-item"><span class="region-flag">🇺🇸</span><span>США</span></div>
+          <div class="region-item"><span class="region-flag">🇩🇪</span><span>Германия</span></div>
+          <div class="region-item"><span class="region-flag">🇯🇵</span><span>Япония</span></div>
+          <div class="region-item"><span class="region-flag">🇬🇧</span><span>Великобритания</span></div>
+          <div class="region-item"><span class="region-flag">🇦🇪</span><span>ОАЭ</span></div>
+          <div class="region-item"><span class="region-flag">🇨🇳</span><span>Китай</span></div>
+          <div class="region-item"><span class="region-flag">🇮🇹</span><span>Италия</span></div>
+          <div class="region-item"><span class="region-flag">🇫🇷</span><span>Франция</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label fade-up">Вопросы и ответы</span>
+      <h2 class="section-title fade-up fade-up-delay-1">Часто задаваемые вопросы</h2>
+      <div class="divider divider-center fade-up fade-up-delay-1"></div>
+    </div>
+
+    <div class="faq-list fade-up fade-up-delay-2">
+      <div class="faq-item">
+        <div class="faq-question">Сколько стоит поставка автомобиля из-за рубежа?<span class="faq-icon">+</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Стоимость зависит от страны происхождения, класса автомобиля, логистики и таможенного оформления. Для расчёта точной стоимости оставьте заявку — мы подготовим индивидуальное коммерческое предложение в течение 24 часов.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Какой срок доставки?<span class="faq-icon">+</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Сроки зависят от региона: из США — 6–10 недель, из Европы — 4–6 недель, из Японии — 6–8 недель, из ОАЭ — 3–5 недель. Точные сроки фиксируются в договоре.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Какие гарантии вы предоставляете?<span class="faq-icon">+</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Мы проверяем каждый автомобиль по базам данных истории, проводим инспекцию и предоставляем полный пакет документов. Каждая сделка оформляется договором с фиксированными условиями и сроками.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Можете привезти коллекционный или раритетный автомобиль?<span class="faq-icon">+</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Да, это одно из наших ключевых направлений. Мы работаем с частными коллекционерами, специализированными аукционами и дилерами редких автомобилей по всему миру. Расскажите нам, что вас интересует — найдём.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Вы помогаете с таможенным оформлением?<span class="faq-icon">+</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Да, таможенное оформление полностью на нашей стороне. Мы работаем с проверенными брокерами и знаем все актуальные требования законодательства.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Есть ли у вас онлайн-консультант?<span class="faq-icon">+</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Да, наш AI-помощник доступен круглосуточно и помогает получить базовую информацию об услугах, поставках автомобилей и подборе запчастей. Нажмите на иконку чата в правом нижнем углу экрана.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Как оплатить заказ?<span class="faq-icon">+</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Принимаем банковский перевод (включая валютные переводы), наличный расчёт. Возможна работа с авансом и поэтапной оплатой. Все условия обсуждаются индивидуально.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <div class="reviews-section-head fade-up">
+      <span class="section-label">Более 300+ отзывов от клиентов</span>
+      <h2 class="section-title">Что говорят о работе 5CUSTOMS</h2>
+      <p>Реальные сценарии обращений: подбор автомобилей, поставка деталей, сопровождение сделок и обслуживание.</p>
+      <div class="reviews-actions">
+        <button class="reviews-arrow reviews-prev" type="button" aria-label="Предыдущий отзыв">←</button>
+        <button class="reviews-arrow reviews-next" type="button" aria-label="Следующий отзыв">→</button>
+      </div>
+    </div>
+    <div class="reviews-viewport fade-up fade-up-delay-1">
+      <div class="reviews-track" id="reviewsTrack">
+        <article class="review-card">
+              <div class="review-avatar">АК</div>
+              <h4>Александр К.</h4>
+              <p>Подбирали Porsche 911 из Европы. Получил понятный расчёт, фотоотчёты на каждом этапе и автомобиль в оговорённые сроки.</p>
+              <a href="https://t.me/5customs" target="_blank" rel="noopener">Обсудить похожий запрос</a>
+            </article>
+            <article class="review-card">
+              <div class="review-avatar">ДС</div>
+              <h4>Дмитрий С.</h4>
+              <p>Нужны были редкие детали на AMG. Команда быстро нашла поставщика, согласовала сроки и помогла избежать лишних расходов.</p>
+              <a href="https://t.me/5customs" target="_blank" rel="noopener">Обсудить похожий запрос</a>
+            </article>
+            <article class="review-card">
+              <div class="review-avatar">МР</div>
+              <h4>Михаил Р.</h4>
+              <p>Искал Corvette C8 с конкретной комплектацией. Варианты показали быстро, сделка прошла спокойно, без сюрпризов.</p>
+              <a href="https://t.me/5customs" target="_blank" rel="noopener">Обсудить похожий запрос</a>
+            </article>
+            <article class="review-card">
+              <div class="review-avatar">ИН</div>
+              <h4>Илья Н.</h4>
+              <p>Понравилось, что не давили с выбором. Помогли сравнить несколько машин и честно объяснили, какой вариант выгоднее.</p>
+              <a href="https://t.me/5customs" target="_blank" rel="noopener">Обсудить похожий запрос</a>
+            </article>
+            <article class="review-card">
+              <div class="review-avatar">СВ</div>
+              <h4>Сергей В.</h4>
+              <p>Заказывал подбор Bentley. Сервис аккуратный, коммуникация нормальная, все документы и этапы были понятны заранее.</p>
+              <a href="https://t.me/5customs" target="_blank" rel="noopener">Обсудить похожий запрос</a>
+            </article>
+            <article class="review-card">
+              <div class="review-avatar">АП</div>
+              <h4>Андрей П.</h4>
+              <p>Обращался по обслуживанию привезённого авто. Нашли расходники, объяснили сроки поставки и сделали всё без лишней суеты.</p>
+              <a href="https://t.me/5customs" target="_blank" rel="noopener">Обсудить похожий запрос</a>
+            </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts-section" id="contacts">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label fade-up">Связаться с нами</span>
+      <h2 class="section-title fade-up fade-up-delay-1">Готовы обсудить ваш запрос</h2>
+      <div class="divider divider-center fade-up fade-up-delay-1"></div>
+    </div>
+
+    <div class="contacts-grid contacts-grid-single">
+      <div class="contact-form-wrap fade-up">
+        <h3>Оставить заявку</h3>
+        <p class="text-muted">Опишите желаемый автомобиль и мы свяжемся с вами в течение нескольких часов.</p>
+        <form class="contact-form">
+          <div class="form-group">
+            <label>Ваше имя</label>
+            <input type="text" placeholder="Как к вам обращаться?" required>
+          </div>
+          <div class="form-group">
+            <label>Телефон</label>
+            <input type="tel" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="form-group">
+            <label>Что вас интересует?</label>
+            <textarea placeholder="Опишите автомобиль: марка, модель, год, страна…"></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="consent" required>
+            <label for="consent">Я согласен с <a href="privacy.html">политикой конфиденциальности</a> и на обработку персональных данных.</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="premium-footer simple-footer">
+  <div class="container">
+    <div class="simple-footer-inner">
+      <a href="index.html" class="footer-logo">5<span>CUSTOMS</span></a>
+
+      <p class="simple-footer-text">
+        Редкие автомобили. Проверенные поставки. Без лишних посредников.
+      </p>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="YouTube">
+          <img src="icons/youtube.svg" alt="YouTube">
+        </a>
+        <a href="#" aria-label="VK">
+          <img src="icons/vk.svg" alt="VK">
+        </a>
+        <a href="https://t.me/5customs" target="_blank" rel="noopener" aria-label="Telegram">
+          <img src="icons/telegram.svg" alt="Telegram">
+        </a>
+        <a href="#" aria-label="WhatsApp">
+          <img src="icons/whatsapp.svg" alt="WhatsApp">
+        </a>
+      </div>
+
+      <div class="footer-contact-line">
+        <a href="tel:+74663337373">+7 (666) 333-73-73</a>
+        <span>Кронштадтский б-р, 37Б, стр. 3, Москва</span>
+        <span>Пн–Пт: 9:00–20:00 · Сб: 10:00–18:00</span>
+      </div>
+
+      <nav class="simple-footer-nav">
+        <a href="index.html">Главная</a>
+        <a href="portfolio.html">Каталог</a>
+        <a href="news.html">Новости</a>
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+
+      <div class="simple-footer-bottom">
+        <span>© 2026 5CUSTOMS. Все права защищены.</span>
+        <div>
+          <a href="privacy.html">Политика конфиденциальности</a>
+          <a href="privacy.html#cookies">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="modal-contact" onclick="closeModal('modal-contact')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal('modal-contact')">✕</button>
+    <h3>Оставить заявку</h3>
+    <p class="modal-subtitle">Опишите желаемый автомобиль — мы свяжемся в течение нескольких часов.</p>
+    <form class="contact-form">
+      <div class="form-group">
+        <label>Имя</label>
+        <input type="text" placeholder="Ваше имя" required>
+      </div>
+      <div class="form-group">
+        <label>Телефон</label>
+        <input type="tel" placeholder="+7 (___) ___-__-__" required>
+      </div>
+      <div class="form-group">
+        <label>Желаемый автомобиль</label>
+        <textarea placeholder="Опишите: марка, модель, год, пожелания…"></textarea>
+      </div>
+      <div class="form-checkbox">
+        <input type="checkbox" id="c2" required>
+        <label for="c2">Согласен с <a href="privacy.html">политикой конфиденциальности</a></label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-success">
+  <div class="modal" style="text-align:center;max-width:420px;" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal('modal-success')">✕</button>
+    <div style="font-size:3.5rem;margin-bottom:1.25rem;">✅</div>
+    <h3>Заявка принята!</h3>
+    <p class="modal-subtitle">Наш менеджер свяжется с вами в течение нескольких часов. Также можете написать нам в Telegram.</p>
+    <a href="https://t.me/5customs" target="_blank" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;margin-top:0.5rem;">Написать в Telegram</a>
+  </div>
+</div>
+
+<!-- AI WIDGET -->
+<div class="ai-widget">
+  <div class="ai-chat" id="aiChat">
+    <div class="ai-chat-header">
+      <div class="ai-avatar">🤖</div>
+      <div class="ai-chat-info">
+        <h4>AI-помощник 5CUSTOMS</h4>
+        <span>Онлайн · отвечает мгновенно</span>
+      </div>
+      <button class="ai-close-btn">✕</button>
+    </div>
+    <div class="ai-chat-messages">
+      <div class="ai-msg">
+        <div class="ai-msg-bubble">Здравствуйте! Я AI-помощник компании 5CUSTOMS. Помогу с информацией о поставке автомобилей, запчастях и наших услугах. Чем могу помочь? 🚗</div>
+      </div>
+    </div>
+    <div class="ai-chat-input">
+      <input type="text" placeholder="Написать сообщение…">
+      <button class="ai-send-btn">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 10L17 10M12 5l5 5-5 5"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <button class="ai-bubble" aria-label="Открыть AI-чат">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+    </svg>
+    <div class="ai-pulse"></div>
+  </button>
+</div>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner">
+  <p class="cookie-text">Мы используем файлы cookie для улучшения работы сайта. Продолжая пользоваться сайтом, вы соглашаетесь с нашей <a href="privacy.html#cookies">политикой использования cookies</a>.</p>
+  <div class="cookie-actions">
+    <button class="cookie-accept">Принять все</button>
+    <button class="cookie-decline">Отклонить</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

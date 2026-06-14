@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости — 5CUSTOMS | Мир премиальных автомобилей</title>
+  <meta name="description" content="Новости автомобильного мира от 5CUSTOMS: рынок премиальных авто, редкие находки, советы по покупке и обслуживанию.">
+  <meta property="og:title" content="Новости автомобильного мира — 5CUSTOMS">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<nav class="navbar scrolled">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <img src="images/logo.png" alt="5CUSTOMS">
+    </a>
+    <ul class="navbar-nav">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="portfolio.html">Каталог</a></li>
+      <li><a href="news.html" class="active">Новости</a></li>
+      <li><a href="index.html#services">Услуги</a></li>
+      <li><a href="index.html#contacts">Контакты</a></li>
+    </ul>
+    <div class="navbar-cta">
+      <a href="tel:+74663337373" class="navbar-phone">+7 (666) 333-73-73</a>
+      <button class="profile-btn" onclick="openProfileModal()" type="button">
+        <span class="profile-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" role="img">
+            <circle cx="12" cy="8" r="3.6" stroke="currentColor" stroke-width="2"/>
+            <path d="M4.8 20c.9-4.1 3.8-6.3 7.2-6.3s6.3 2.2 7.2 6.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="profile-text">Профиль</span>
+      </button>
+    </div>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <button class="mobile-close">✕</button>
+  <a href="index.html">Главная</a>
+  <a href="portfolio.html">Каталог</a>
+  <a href="news.html">Новости</a>
+  <a href="index.html#contacts">Контакты</a>
+</div>
+
+<div class="news-hero">
+  <div class="container">
+    <span class="section-label" style="color:#93C5FD;">Новости и статьи</span>
+    <h1>Мир премиальных<br>автомобилей</h1>
+    <p>Актуальные новости рынка, советы по покупке и обслуживанию, обзоры редких моделей.</p>
+  </div>
+</div>
+
+<section style="background:var(--off-white);">
+  <div class="container">
+    <div class="news-grid">
+
+      <!-- Featured Article -->
+      <div class="news-card news-card-featured fade-up">
+        <div class="news-image news-img-bg-1">
+          <div class="news-category"><span class="badge badge-blue">Рынок</span></div>
+          <img class="news-card-img" src="images/news/market.webp" alt="Рынок автомобилей">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="news-date">12 мая 2026</span>
+            <span class="news-read-time">· 5 мин чтения</span>
+          </div>
+          <h3>Рынок премиальных автомобилей в 2026 году: что изменилось и как покупать выгодно</h3>
+          <p>Глобальный рынок премиальных автомобилей переживает трансформацию: электрификация топовых брендов, изменение логистических маршрутов и рост интереса к коллекционным экземплярам создают новые возможности для покупателей. Разбираем ключевые тренды и то, как извлечь из них максимальную выгоду при покупке автомобиля мечты.</p>
+          <div class="news-card-footer">
+            <div class="news-author">
+              <div class="news-author-avatar">АМ</div>
+              <span>Редакция 5CUSTOMS</span>
+            </div>
+            <span class="news-read-link">Читать →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="news-card fade-up fade-up-delay-1">
+        <div class="news-image news-img-bg-2">
+          <div class="news-category"><span class="badge badge-dark" style="font-size:0.65rem;">Новинки</span></div>
+          <img class="news-card-img" src="images/news/porsche_gt3.jpg" alt="Porsche GT3">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="news-date">5 мая 2026</span>
+            <span class="news-read-time">· 4 мин</span>
+          </div>
+          <h3>Porsche 911 GT3 RS 2026: мощнее, легче, ближе к трековому опыту</h3>
+          <p>Новый GT3 RS получил пересмотренную аэродинамику и обновлённый 4.0-литровый атмосферный двигатель. Рассказываем о главных отличиях от предшественника и как получить этот автомобиль в России.</p>
+          <div class="news-card-footer">
+            <div class="news-author">
+              <div class="news-author-avatar">РД</div>
+              <span>Редакция 5CUSTOMS</span>
+            </div>
+            <span class="news-read-link">Читать →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="news-card fade-up">
+        <div class="news-image news-img-bg-3">
+          <div class="news-category"><span class="badge badge-blue">Логистика</span></div>
+          <img class="news-card-img" src="images/news/cars_logistics.jpg" alt="Логистика">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="news-date">28 апреля 2026</span>
+            <span class="news-read-time">· 6 мин</span>
+          </div>
+          <h3>Как изменились маршруты поставок автомобилей из Европы и США в 2026 году</h3>
+          <p>Изменения в международной логистике затронули все направления. Рассказываем об актуальных маршрутах, сроках и стоимости доставки премиальных автомобилей в Россию через альтернативные каналы.</p>
+          <div class="news-card-footer">
+            <div class="news-author">
+              <div class="news-author-avatar">СВ</div>
+              <span>Отдел логистики</span>
+            </div>
+            <span class="news-read-link">Читать →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 4 -->
+      <div class="news-card fade-up fade-up-delay-1">
+        <div class="news-image news-img-bg-4">
+          <div class="news-category"><span class="badge badge-dark" style="font-size:0.65rem;">Сервис</span></div>
+          <img class="news-card-img" src="images/news/service.webp" alt="Сервис">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="news-date">20 апреля 2026</span>
+            <span class="news-read-time">· 7 мин</span>
+          </div>
+          <h3>Техническое обслуживание импортного автомобиля: что важно знать владельцу</h3>
+          <p>Владение иностранным автомобилем — особенно редкой или коллекционной моделью — требует специфических знаний. Разбираем нюансы ТО, источники запчастей и как избежать типичных ошибок.</p>
+          <div class="news-card-footer">
+            <div class="news-author">
+              <div class="news-author-avatar">ИК</div>
+              <span>Технический отдел</span>
+            </div>
+            <span class="news-read-link">Читать →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 5 -->
+      <div class="news-card fade-up fade-up-delay-2">
+        <div class="news-image news-img-bg-5">
+          <div class="news-category"><span class="badge badge-blue">Коллекции</span></div>
+          <img class="news-card-img" src="images/news/classic-cars.jpg" alt="Коллекционные автомобили">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="news-date">14 апреля 2026</span>
+            <span class="news-read-time">· 8 мин</span>
+          </div>
+          <h3>5 редких автомобилей, ставших легендами: что делает их особенными</h3>
+          <p>Ferrari 250 GTO, Porsche 917, Ford GT40, Mercedes 300SL, Lamborghini Miura — иконы, за которыми охотятся коллекционеры по всему миру. История каждой и почему они стоят миллионы.</p>
+          <div class="news-card-footer">
+            <div class="news-author">
+              <div class="news-author-avatar">ДП</div>
+              <span>Эксперт по коллекциям</span>
+            </div>
+            <span class="news-read-link">Читать →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 6 -->
+      <div class="news-card fade-up">
+        <div class="news-image news-img-bg-6">
+          <div class="news-category"><span class="badge badge-dark" style="font-size:0.65rem;">Советы</span></div>
+          <img class="news-card-img" src="images/news/tips.jpg" alt="Советы">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="news-date">7 апреля 2026</span>
+            <span class="news-read-time">· 5 мин</span>
+          </div>
+          <h3>10 вопросов, которые нужно задать перед покупкой автомобиля из-за рубежа</h3>
+          <p>Покупка автомобиля за рубежом — это не просто сделка. Это процесс, в котором важна каждая деталь: история, документы, техническое состояние, логистика. Чек-лист от наших экспертов.</p>
+          <div class="news-card-footer">
+            <div class="news-author">
+              <div class="news-author-avatar">НМ</div>
+              <span>Редакция 5CUSTOMS</span>
+            </div>
+            <span class="news-read-link">Читать →</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:4rem;" class="fade-up">
+      <p style="margin-bottom:1.5rem;color:var(--text-muted);">Есть вопросы после прочтения? Наши эксперты всегда готовы помочь.</p>
+      <button class="btn btn-dark btn-lg" onclick="openModal('modal-contact')">Задать вопрос</button>
+    </div>
+  </div>
+</section>
+
+<footer class="premium-footer simple-footer">
+  <div class="container">
+    <div class="simple-footer-inner">
+      <a href="index.html" class="footer-logo">5<span>CUSTOMS</span></a>
+
+      <p class="simple-footer-text">
+        Редкие автомобили. Проверенные поставки. Без лишних посредников.
+      </p>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="YouTube">
+          <img src="icons/youtube.svg" alt="YouTube">
+        </a>
+        <a href="#" aria-label="VK">
+          <img src="icons/vk.svg" alt="VK">
+        </a>
+        <a href="https://t.me/5customs" target="_blank" rel="noopener" aria-label="Telegram">
+          <img src="icons/telegram.svg" alt="Telegram">
+        </a>
+        <a href="#" aria-label="WhatsApp">
+          <img src="icons/whatsapp.svg" alt="WhatsApp">
+        </a>
+      </div>
+
+      <div class="footer-contact-line">
+        <a href="tel:+74663337373">+7 (666) 333-73-73</a>
+        <span>Кронштадтский б-р, 37Б, стр. 3, Москва</span>
+        <span>Пн–Пт: 9:00–20:00 · Сб: 10:00–18:00</span>
+      </div>
+
+      <nav class="simple-footer-nav">
+        <a href="index.html">Главная</a>
+        <a href="portfolio.html">Каталог</a>
+        <a href="news.html">Новости</a>
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+
+      <div class="simple-footer-bottom">
+        <span>© 2026 5CUSTOMS. Все права защищены.</span>
+        <div>
+          <a href="privacy.html">Политика конфиденциальности</a>
+          <a href="privacy.html#cookies">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modal-contact" onclick="closeModal('modal-contact')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal('modal-contact')">✕</button>
+    <h3>Задать вопрос</h3>
+    <p class="modal-subtitle">Ответим в течение нескольких часов.</p>
+    <form class="contact-form">
+      <div class="form-group"><label>Имя</label><input type="text" required></div>
+      <div class="form-group"><label>Телефон или Email</label><input type="text" required></div>
+      <div class="form-group"><label>Вопрос</label><textarea placeholder="Ваш вопрос…" required></textarea></div>
+      <div class="form-checkbox">
+        <input type="checkbox" id="c1" required>
+        <label for="c1">Согласен с <a href="privacy.html">политикой конфиденциальности</a></label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Отправить</button>
+    </form>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-success">
+  <div class="modal" style="text-align:center;max-width:420px;" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal('modal-success')">✕</button>
+    <div style="font-size:3.5rem;margin-bottom:1.25rem;">✅</div>
+    <h3>Вопрос получен!</h3>
+    <p class="modal-subtitle">Свяжемся с вами скоро.</p>
+  </div>
+</div>
+
+<div class="ai-widget">
+  <div class="ai-chat">
+    <div class="ai-chat-header">
+      <div class="ai-avatar">🤖</div>
+      <div class="ai-chat-info"><h4>AI-помощник</h4><span>Онлайн</span></div>
+      <button class="ai-close-btn">✕</button>
+    </div>
+    <div class="ai-chat-messages">
+      <div class="ai-msg"><div class="ai-msg-bubble">Привет! Есть вопросы по автомобилям или поставкам? 🚗</div></div>
+    </div>
+    <div class="ai-chat-input">
+      <input type="text" placeholder="Написать…">
+      <button class="ai-send-btn"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10L17 10M12 5l5 5-5 5"/></svg></button>
+    </div>
+  </div>
+  <button class="ai-bubble"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><div class="ai-pulse"></div></button>
+</div>
+
+<div class="cookie-banner">
+  <p class="cookie-text">Используем cookies. <a href="privacy.html#cookies">Подробнее</a></p>
+  <div class="cookie-actions">
+    <button class="cookie-accept">Принять</button>
+    <button class="cookie-decline">Отклонить</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
